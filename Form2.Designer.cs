@@ -33,6 +33,7 @@
             this.lbl_stime = new System.Windows.Forms.Label();
             this.lbl_time = new System.Windows.Forms.Label();
             this.tmr_time = new System.Windows.Forms.Timer(this.components);
+            this.tmr_clz = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btn_dis
@@ -70,14 +71,21 @@
             // 
             this.tmr_time.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // tmr_clz
+            // 
+            this.tmr_clz.Interval = 10;
+            this.tmr_clz.Tick += new System.EventHandler(this.tmr_clz_Tick);
+            // 
             // Form_hello
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkTurquoise;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lbl_time);
             this.Controls.Add(this.lbl_stime);
             this.Controls.Add(this.btn_dis);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_hello";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "欢迎使用";
@@ -94,5 +102,6 @@
         private System.Windows.Forms.Label lbl_stime;
         private System.Windows.Forms.Label lbl_time;
         private System.Windows.Forms.Timer tmr_time;
+        private System.Windows.Forms.Timer tmr_clz;
     }
 }

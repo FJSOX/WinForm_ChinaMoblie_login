@@ -108,6 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightCoral;
             this.ClientSize = new System.Drawing.Size(388, 260);
             this.Controls.Add(this.Cbox_linesl);
             this.Controls.Add(this.btn_can);
@@ -118,7 +119,7 @@
             this.Controls.Add(this.lbl_name);
             this.Name = "Form_log";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form_log";
+            this.Text = "连接到网络";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -23,7 +23,9 @@ namespace WindowsForms_Test1
         private void btn_dis_Click(object sender, EventArgs e)
         {
             //this.Form_hello_FormClosing(sender, e);
-            Application.Exit();
+            tmr_clz.Start();
+            
+            //Application.Exit();
         }
 
         private void Form_hello_FormClosing(object sender, FormClosingEventArgs e)
@@ -46,6 +48,19 @@ namespace WindowsForms_Test1
         {
             tmr_time.Enabled = true;
             //timer1_Tick(sender, e);
+        }
+
+        private void tmr_clz_Tick(object sender, EventArgs e)
+        {
+            if (this.Opacity>=0.025)
+            {
+                this.Opacity -= 0.025;
+            }
+            else
+            {
+                Application.Exit();
+                tmr_clz.Stop();
+            }
         }
     }
 }

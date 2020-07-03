@@ -39,7 +39,8 @@ namespace WindowsForms_Test1
                 {
                     //MessageBox.Show("登陆成功");//最好加一个时间属性
                     Form_hello fh = new Form_hello();
-                    fh.ShowDialog();
+                    fh.Show();
+                    //this.WindowState=FormWindowState.Minimized;
                     this.Hide();
                 }
                 else
