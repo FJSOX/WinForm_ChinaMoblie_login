@@ -41,7 +41,7 @@
             this.btn_dis.Name = "btn_dis";
             this.btn_dis.Size = new System.Drawing.Size(75, 23);
             this.btn_dis.TabIndex = 0;
-            this.btn_dis.Text = "断开";
+            this.btn_dis.Text = "注销";
             this.btn_dis.UseVisualStyleBackColor = true;
             this.btn_dis.Click += new System.EventHandler(this.btn_dis_Click);
             // 
@@ -49,7 +49,7 @@
             // 
             this.lbl_stime.AutoSize = true;
             this.lbl_stime.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbl_stime.Location = new System.Drawing.Point(140, 72);
+            this.lbl_stime.Location = new System.Drawing.Point(160, 145);
             this.lbl_stime.Name = "lbl_stime";
             this.lbl_stime.Size = new System.Drawing.Size(138, 28);
             this.lbl_stime.TabIndex = 1;
@@ -59,17 +59,15 @@
             // 
             this.lbl_time.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lbl_time.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbl_time.Location = new System.Drawing.Point(226, 185);
+            this.lbl_time.Location = new System.Drawing.Point(305, 183);
             this.lbl_time.Name = "lbl_time";
-            this.lbl_time.Size = new System.Drawing.Size(370, 57);
+            this.lbl_time.Size = new System.Drawing.Size(182, 57);
             this.lbl_time.TabIndex = 2;
             this.lbl_time.Text = "00:00:00";
             this.lbl_time.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tmr_time
             // 
-            this.tmr_time.Enabled = true;
-            this.tmr_time.Interval = 1000;
             this.tmr_time.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form_hello
@@ -84,6 +82,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "欢迎使用";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_hello_FormClosing);
+            this.Load += new System.EventHandler(this.Form_hello_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

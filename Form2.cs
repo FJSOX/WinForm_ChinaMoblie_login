@@ -15,6 +15,7 @@ namespace WindowsForms_Test1
         public Form_hello()
         {
             InitializeComponent();
+
         }
 
         
@@ -30,11 +31,21 @@ namespace WindowsForms_Test1
             btn_dis_Click(sender, e);
         }
 
-        DateTime thetime = new DateTime();
+
+        DateTime thetime = DateTime.Now;
+        TimeSpan interval = new TimeSpan();
+        
         private void timer1_Tick(object sender, EventArgs e)
         {
-            this.lbl_time.Text = (DateTime.Now - thetime).ToString();
-            
+            interval = DateTime.Now - thetime;
+
+            this.lbl_time.Text = String.Format("{0:00}:{1:00}:{2:00}", interval.Hours,interval.Minutes, interval.Seconds);  
+        }
+
+        private void Form_hello_Load(object sender, EventArgs e)
+        {
+            tmr_time.Enabled = true;
+            //timer1_Tick(sender, e);
         }
     }
 }
