@@ -50,7 +50,7 @@
             // 
             this.lbl_stime.AutoSize = true;
             this.lbl_stime.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbl_stime.Location = new System.Drawing.Point(160, 145);
+            this.lbl_stime.Location = new System.Drawing.Point(81, 124);
             this.lbl_stime.Name = "lbl_stime";
             this.lbl_stime.Size = new System.Drawing.Size(138, 28);
             this.lbl_stime.TabIndex = 1;

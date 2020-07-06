@@ -15,7 +15,10 @@ namespace WindowsForms_Test1
         public Form_hello()
         {
             InitializeComponent();
-
+            //Form_log fl = new Form_log();
+            this.lbl_stime.Text = "以为您连接到" + Form_log.get_operator + "网络，连接时长：";
+            
+            
         }
 
         
