@@ -38,6 +38,7 @@
             // 
             // btn_dis
             // 
+            this.btn_dis.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_dis.Location = new System.Drawing.Point(363, 317);
             this.btn_dis.Name = "btn_dis";
             this.btn_dis.Size = new System.Drawing.Size(75, 23);
@@ -81,6 +82,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
+            this.CancelButton = this.btn_dis;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lbl_time);
             this.Controls.Add(this.lbl_stime);

@@ -78,6 +78,7 @@
             // btn_can
             // 
             this.btn_can.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(92)))));
+            this.btn_can.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_can.FlatAppearance.BorderSize = 0;
             this.btn_can.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_can.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -147,10 +148,12 @@
             // 
             // Form_log
             // 
+            this.AcceptButton = this.btn_log;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.CancelButton = this.btn_can;
             this.ClientSize = new System.Drawing.Size(739, 450);
             this.Controls.Add(this.lbl_pw);
             this.Controls.Add(this.lbl_name);
@@ -163,7 +166,6 @@
             this.Name = "Form_log";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "连接到网络";
-            this.Load += new System.EventHandler(this.Form_log_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

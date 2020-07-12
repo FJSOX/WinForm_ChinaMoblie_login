@@ -18,11 +18,6 @@ namespace WindowsForms_Test1
             InitializeComponent();
         }
 
-        private void lst_user_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_log_Click(object sender, EventArgs e)
         {
             if (this.Cbox_linesl.Text!="线路选择")
@@ -102,11 +97,6 @@ namespace WindowsForms_Test1
         private void lbl_name_Click(object sender, EventArgs e)
         {
             lbl_name.SendToBack();
-        }
-
-        private void Form_log_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
